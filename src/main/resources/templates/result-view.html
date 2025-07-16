@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Student Result</title>
+</head>
+<body>
+<h2>Student Result</h2>
+
+<div th:if="${result != null}">
+    <p><strong>Roll No:</strong> <span th:text="${result.rollNo}"></span></p>
+    <p><strong>Name:</strong> <span th:text="${result.studentName}"></span></p>
+    <p><strong>Math:</strong> <span th:text="${result.math}"></span></p>
+    <p><strong>Physics:</strong> <span th:text="${result.physics}"></span></p>
+    <p><strong>Chemistry:</strong> <span th:text="${result.chemistry}"></span></p>
+    <p><strong>Grade:</strong> <span th:text="${result.grade}"></span></p>
+</div>
+
+<div th:if="${result == null}">
+    <p style="color:red;">Result not found!</p>
+</div>
+
+<a href="/">🔙 Check Another</a>
+</body>
+</html>
