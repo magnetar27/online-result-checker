@@ -15,7 +15,7 @@ The results are loaded from a CSV file into an in-memory H2 database on applicat
 ---
 
 ## 📁 Project Structure
-
+```
 src/
 ├── main/
 │ ├── java/
@@ -28,3 +28,4 @@ src/
 │ ├── templates/ # HTML pages (Thymeleaf)
 │ ├── StudentDatasetMain.csv # Sample result data
 │ └── application.properties
+```
